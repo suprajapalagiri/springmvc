@@ -1,0 +1,6 @@
+//com.springsource.config.ui.prefs.activePageIndex\:/Helloworld-SpringMVC/src/main/webapp/WEB-INF/dispatcher-serlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/Helloworld-SpringMVC/src/main/webapp/WEB-INF/dispatcher-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/Interceptors-SpringMVC/src/main/webapp/WEB-INF/login-dispatcher-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/Interceptors-SpringMVC2/src/main/webapp/WEB-INF/login-dispatcher-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/LoginApp-SpringMVC/src/main/webapp/WEB-INF/login-dispatcher-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+eclipse.preferences.version=1
