@@ -16,9 +16,12 @@
 <body>
 	<a href="?lang=hi">HINDI</a>
 	<a href="?lang=te">TELUGU</a>
-	<h2><spring:message code="title" /></h2>
+	<h2>
+		<spring:message code="title" />
+	</h2>
 	<!-- action="/spring-mvc-xml/addEmployee" modelAttribute="employee"> -->
-	<form:form action="/SpringWebMvcOrm18n/insert" method="post" modelAttribute="employee">
+	<form:form action="/SpringWebMvcOrm18n/insert" method="post"
+		modelAttribute="employee">
 		<pre>
 <spring:message code="ename" /> : <form:input path="empName" />
 <form:errors path="empName" cssClass="errors" />

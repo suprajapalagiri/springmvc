@@ -24,6 +24,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import com.app.model.Employee;
 
+
 @Configuration
 @EnableWebMvc // MVC
 @EnableTransactionManagement // Tx
@@ -39,7 +40,7 @@ public class AppConfig implements WebMvcConfigurer {
 		ds.setDriverClassName(env.getProperty("dc"));
 		ds.setUrl(env.getProperty("url"));
 		ds.setUsername(env.getProperty("un"));
-		ds.setPassword(env.getProperty("pwd"));
+//		ds.setPassword(env.getProperty("pwd"));
 		return ds;
 	}
 
@@ -92,7 +93,7 @@ public class AppConfig implements WebMvcConfigurer {
 	@Bean
 	public ReloadableResourceBundleMessageSource messageSource() {
 		ReloadableResourceBundleMessageSource r = new ReloadableResourceBundleMessageSource();
-		r.setBasename("classpath:messages");
+		r.setBasename("classpath:message");
 		r.setDefaultEncoding("UTF-8");
 		return r;
 	}

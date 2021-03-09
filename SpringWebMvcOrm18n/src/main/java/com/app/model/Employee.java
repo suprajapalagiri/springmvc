@@ -25,7 +25,7 @@ public class Employee {
 	@Column(name = "addr")
 	private String empAddr;
 	@Column(name = "cntry")
-	private String empcntry;
+	private String empCntry;
 	@Column(name = "lang")
 	@ElementCollection
 	@CollectionTable(name = "emplangtab", joinColumns = @JoinColumn(name = "eid"))
@@ -79,12 +79,12 @@ public class Employee {
 		this.empAddr = empAddr;
 	}
 
-	public String getEmpcntry() {
-		return empcntry;
+	public String getEmpCntry() {
+		return empCntry;
 	}
 
-	public void setEmpcntry(String empcntry) {
-		this.empcntry = empcntry;
+	public void setEmpcntry(String empCntry) {
+		this.empCntry = empCntry;
 	}
 
 	public List<String> getEmpLang() {
@@ -98,7 +98,7 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [empId=" + empId + ", empName=" + empName + ", empPwd=" + empPwd + ", empGen=" + empGen
-				+ ", empAddr=" + empAddr + ", empcntry=" + empcntry + ", empLang=" + empLang + "]";
+				+ ", empAddr=" + empAddr + ", empcntry=" + empCntry + ", empLang=" + empLang + "]";
 	}
 
 }
