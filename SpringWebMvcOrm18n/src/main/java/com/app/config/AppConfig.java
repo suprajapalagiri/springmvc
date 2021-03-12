@@ -3,7 +3,7 @@ package com.app.config;
 import java.util.Locale;
 import java.util.Properties;
 
-import org.apache.tomcat.dbcp.dbcp2.BasicDataSource;
+import org.apache.commons.dbcp.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -21,8 +21,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
-
 import com.app.model.Employee;
+
 
 
 @Configuration
@@ -31,16 +31,17 @@ import com.app.model.Employee;
 @PropertySource("classpath:db.properties")
 @ComponentScan(basePackages = "com.app")
 public class AppConfig implements WebMvcConfigurer {
+
 	@Autowired
 	private Environment env;
-
+	
 	@Bean
 	public BasicDataSource dsObj() {
 		BasicDataSource ds = new BasicDataSource();
 		ds.setDriverClassName(env.getProperty("dc"));
 		ds.setUrl(env.getProperty("url"));
 		ds.setUsername(env.getProperty("un"));
-//		ds.setPassword(env.getProperty("pwd"));
+         	ds.setPassword(env.getProperty("pwd"));
 		return ds;
 	}
 

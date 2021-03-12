@@ -43,8 +43,7 @@ public class EmployeeController {
 
 	@RequestMapping(value = "/insert", method = RequestMethod.POST)
 	// ***read modelAttribute, next param must be Errors
-	public String saveEmp(@ModelAttribute("employee") Employee emp, Errors errors, ModelMap map, Locale locale,
-			BindingResult bind) {
+	public String saveEmp(@ModelAttribute("employee") Employee emp, Errors errors, ModelMap map, Locale locale,	BindingResult bind) {
 		System.out.println("saveEMp");
 		// check validation errors
 		validator.validate(emp, errors);
@@ -64,4 +63,5 @@ public class EmployeeController {
 		// finally goto UI page
 		return "EmployeeRegister";
 	}
+	//success=\u0C09\u0C26\u0C4D\u0C2F\u0C4B\u0C17\u0C3F{0}\u0C38\u0C47\u0C35\u0C4D\u0C05\u0C2F\u0C4D\u0C2F\u0C3E\u0C30\u0C41
 }

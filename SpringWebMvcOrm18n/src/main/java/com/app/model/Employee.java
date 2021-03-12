@@ -6,6 +6,8 @@ import javax.persistence.CollectionTable;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.Table;
@@ -15,6 +17,7 @@ import javax.persistence.Table;
 public class Employee {
 	@Id
 	@Column(name = "eid")
+	  @GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer empId;
 	@Column(name = "ename")
 	private String empName;
@@ -24,6 +27,11 @@ public class Employee {
 	private String empGen;
 	@Column(name = "addr")
 	private String empAddr;
+	
+	public void setEmpCntry(String empCntry) {
+		this.empCntry = empCntry;
+	}
+
 	@Column(name = "cntry")
 	private String empCntry;
 	@Column(name = "lang")
@@ -79,14 +87,11 @@ public class Employee {
 		this.empAddr = empAddr;
 	}
 
+	
+
 	public String getEmpCntry() {
 		return empCntry;
 	}
-
-	public void setEmpcntry(String empCntry) {
-		this.empCntry = empCntry;
-	}
-
 	public List<String> getEmpLang() {
 		return empLang;
 	}

@@ -33,6 +33,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\pvlsupraja\Desktop\aabbcc\SpringWebMvcOrm18n"/>
 			<item value="C:\Users\HOME\Downloads\SimpleMVC"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -45,7 +46,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item value="All Catalogs" key="catalog"/>
+		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>

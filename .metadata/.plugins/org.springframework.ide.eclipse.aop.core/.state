@@ -3,6 +3,7 @@
 <aop-project name="UsingAnnotation"/>
 <aop-project name="Helloworld-SpringMVC"/>
 <aop-project name="SimpleMVC"/>
+<aop-project name="SpringWebMvcOrm18n"/>
 <aop-project name="Interceptors-SpringMVC"/>
 <aop-project name="LoginApp-SpringMVC"/>
 </aop-reference-model>

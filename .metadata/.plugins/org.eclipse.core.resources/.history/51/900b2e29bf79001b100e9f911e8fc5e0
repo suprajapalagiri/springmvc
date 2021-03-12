@@ -1,5 +1,0 @@
-package com.login.interceptor;
-
-public class MyInterceptor {
-
-}
